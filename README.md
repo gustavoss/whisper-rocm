@@ -14,12 +14,12 @@ git clone https://github.com/gustavoss/whisper-rocm.git
 cd ./whisper-rocm
 ```
 
-### Step 3: Navigate into the repository
+### Step 3: Build image
 ```bash
 docker build -t whisper-rocm .
 ```
 
-### Step 4: Navigate into the repository
+### Step 4: Create and run container
 ```bash
 docker run -d \
   --name=whisper \
