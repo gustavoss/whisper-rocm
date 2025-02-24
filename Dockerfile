@@ -2,7 +2,7 @@
 FROM rocm/pytorch
 
 # Defina a variável de ambiente para o diretório de modelos
-ENV WHISPER_MODEL_DIR=/docker/whisper
+ENV WHISPER_MODEL_DIR=/docker/whisper-rocm
 
 # Crie o diretório para armazenar os modelos
 RUN mkdir -p ${WHISPER_MODEL_DIR}
