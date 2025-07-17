@@ -1,5 +1,5 @@
 # Use a imagem base do PyTorch com suporte ao ROCm
-FROM rocm/pytorch
+FROM rocm/pytorch:latest
 
 # Defina a variável de ambiente para o diretório de modelos
 ENV WHISPER_MODEL_DIR=/docker/whisper-rocm
