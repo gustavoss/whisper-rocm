@@ -34,6 +34,10 @@ docker run -d \
   whisper-rocm
 ```
 
+Test:
+```bash
+curl -X POST "http://localhost:9001/transcribe/audio/transcriptions"   -F "file=@/path/to/audio.mp3" -F "language=en" -F "model=base" -F "timestamps=true"
+```
 ### Step 5: Web interface
 You can also use whisper-gui to transcribe audio via a web interface:
 https://github.com/gustavoss/whisper-gui
